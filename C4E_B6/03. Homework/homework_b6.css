@@ -1,0 +1,112 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.homepage--header__logo {
+    color: rgb(93, 196, 93);
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    width: 45%
+}
+
+.homepage--header.homeButton {
+    color: rgb(93, 196, 93);
+}
+
+.homepage--header {
+    font-size: 85%;
+    width: 85px;
+    text-align: center;
+}
+
+.submitbutton {
+    color: rgb(93, 196, 93);
+    font-weight: normal;
+    font-size: 12px;
+    background-color: white;
+    padding: 8px;
+    border: 2px solid rgb(93, 196, 93);
+    border-radius: 7px;
+    width: 120px;
+}
+
+.homepage--cover {
+    background-image: url(https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    height: 500px;
+    position: relative;
+}
+
+.homepage--cover__content {
+    margin: auto;
+    text-align: center;
+    color: white;
+    width: 65%;
+    word-break: break-word;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* fix cứng thế này ko ổn lắm nhưng mò mãi ko ra */
+
+.homepage--cover__title {
+    font-weight: 700;
+}
+
+.homepage--cover__intro {
+    margin-top: 20px;
+    font-size: smaller;
+    margin-bottom: 20px;
+}
+
+.homepage--cover__button {
+    text-align: center;
+    background-color: rgb(93, 196, 93);
+    border-radius: 5px;
+    border: 0;
+    padding: 10px;
+    color: white;
+    width: 120px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.box {
+    /* border: thin solid blue; */
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 350px;
+    width: 300px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.homepage--footer {
+    margin-left: 10%;
+}
+
+.fa.fa {
+    margin-bottom: 15px;
+    font-size: 32px;
+    color: rgb(93, 196, 93);
+}
+
+.homepage--footer__title {
+    padding-bottom: 10px;
+    font-size: small;
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+.homepage--footer__content {
+    text-align: left;
+    word-break: break-word;
+    font-size: 70%;
+    opacity: 0.7;
+}

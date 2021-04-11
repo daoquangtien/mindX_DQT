@@ -1,0 +1,19 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.heading--title__biggest .name3 {
+    color: rgb(13, 255, 203);
+}
+
+.heading--title__biggest .title4 {
+    color: blue;
+}
+
+h3 {
+    color: brown;
+}
+
+.container div div {
+    color: chartreuse;
+}

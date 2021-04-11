@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="onbai6.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <title>Ôn bài 6: HTML & CSS</title>
+</head>
+
+<body>
+
+    <div>
+        <p class="paragraph p1">Đại diện lãnh đạo tỉnh Đắk Nông cho rằng</p>
+        <p class="paragraph p2">Đại diện lãnh đạo tỉnh Đắk Nông cho rằng</p>
+        <p class="paragraph p3">Đại diện lãnh đạo tỉnh Đắk Nông cho rằng</p>
+    </div>
+    <div>
+        <div class="container">
+            <div>
+                <div class="box">A box</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thẻ tiêu đề: -->
+    <h1 class="heading--title__biggest title1">Tiêu đề lớn nhất
+        <p class="title2">Đây là name2</p>
+    </h1>
+    <!-- Nếu lồng các thẻ khác vào trong thì chỉ nhận thẻ ngoài cùng -->
+    <h2 class="heading--title__biggest title2">Tiêu đề lớn nhì</h2>
+    <h3 class="heading--title__biggest title3">Tiêu đề lớn ba</h3>
+    <h4 class="heading--title__biggest title4">Tiêu đề nhỏ ba</h4>
+    <h5>Tiêu đề nhỏ nhì</h5>
+    <h6>Tiêu đề nhỏ nhất</h6>
+
+    <!-- Thẻ <p> chứa đoạn paragraph, khi viết cả đoạn text mà muốn xuống dòng thì phải dùng thẻ p -->
+    <p>Đây là 1 đoạn paragraph dài loằng loằng</p>
+
+    <!-- Thẻ <div> -->
+    <div>Đây là thẻ có thể chứa tất cả các thẻ khác để biến thành 1 khối</div>
+
+    <!-- Thẻ <span> có độ dài bằng đúng nội dung của nó -->
+    <span>Đây là thẻ span</span>
+
+    <!-- ol và li để tạo nội dung theo số thứ tự-->
+    <ol>
+        <li>Mở bài</li>
+        <li>Thân bài</li>
+        <li>Kết bài</li>
+    </ol>
+
+    <!-- ul và li để tạo nội dung không có thứ tự-->
+    <ul>
+        <li>Mở bài</li>
+        <li>Thân bài</li>
+        <li>Kết bài</li>
+    </ul>
+
+    <!-- Thẻ a là thẻ đặt được liên kết vào trong, muốn bật sang tab khác thì thêm thuộc tính target="_blank" -->
+    <a href="https://www.google.com.vn/" target="_blank">Google.com.vn sang tab khác</a>
+
+    <!-- Thẻ img để chèn ảnh, thuộc tính alt="" để chú thích khi ảnh bị lỗi hoặc ko có ảnh -->
+    <!-- Thuộc tính width, height để thay đổi kích thước, tuy nhiên sau này sẽ dùng CSS để chỉnh sửa toàn bộ -->
+
+    <div>
+        <img src="https://motionarray.imgix.net/preview-109791-7yvN3aYi0M-high_0000.jpg" alt="img" width="1000" height="500">
+    </div>
+
+    <div class="paragraph">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, rem quas distinctio consequuntur ullam minima debitis adipisci sint. Iure, inventore consequuntur! Vitae, dignissimos veniam. Voluptate beatae iste id eveniet unde?</p>
+        <!-- Thẻ hr để tạo 1 đường ngang dài hết màn hình, thuộc tính width để chỉnh độ dài của đường ngang -->
+        <hr width="100">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor et delectus tenetur ex atque facilis sit quibusdam optio, rem porro veniam velit numquam pariatur accusantium? Saepe perspiciatis rerum nam tenetur?
+        </p>
+    </div>
+
+    <div>
+        <u>Gạch chân</u>
+        <b>In đậm</b>
+        <i>In nghiêng</i>
+        <u><i><b>Cái này vừa in đậm vừa in nghiêng vừa gạch chân</b></i></u>
+    </div>
+
+    <!-- Thẻ table để tạo 'table' -->
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>AGE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td>DZ</td>
+                    <td>Quang Tiến</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+
+                    <td>DZ</td>
+                    <td>Quang Tiến</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td colspan="2">3</td>
+
+                    <td>Quang Tiến</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>DZ</td>
+                    <td>Quang Tiến</td>
+                    <td>19</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Các thẻ input dùng để người dùng nhập thông tin vào-->
+
+    <div>
+        <!-- Thẻ <form action=""></form> được dùng để người dùng gửi thông tin (submit) lên server -->
+        <form>
+            <input type="text">
+            <!-- Nhập chữ -->
+            <input type="checkbox">
+            <!-- Ô vuông có dấu tích, có thể tích nhiều ô vuông cùng lúc -->
+        </form>
+    </div>
+    <div>
+        <!-- Thẻ <form action=""></form> được dùng để người dùng gửi thông tin (submit) lên server -->
+        <form>
+            <input type="radio" value="1" name="Gender">Male
+            <input type="radio" value="2" name="Gender">Female
+            <input type="radio" value="3" name="Gender">Gay
+            <input type="radio" value="4" name="Gender">Les
+            <!-- Tickbox dạng tròn, chỉ được chọn 1 trong các Tickbox -->
+        </form>
+    </div>
+    <div>
+        <!-- Thẻ <form action=""></form> được dùng để người dùng gửi thông tin (submit) lên server -->
+        <form>
+            <input type="button" value="Click here">
+            <input type="file" value="Input">
+            <input type="submit" value="Sign In">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
