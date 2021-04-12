@@ -27,19 +27,40 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    /* background-image: url(https://i.pinimg.com/originals/50/58/8c/50588c283972daf90c715e9260342ddd.jpg); */
-    /* background-image: url(https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX18052134.jpg); */
-    /* background-image: url(https://images.pexels.com/photos/4194850/pexels-photo-4194850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-color: transparent; */
+    position: relative;
 }
+
+.quotePage--main__leftBox .img {
+    /* background-image: url(https://images.pexels.com/photos/4194850/pexels-photo-4194850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); */
+    background-image: url(https://i.pinimg.com/originals/50/58/8c/50588c283972daf90c715e9260342ddd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+}
+
+.quotePage--main__leftBox .content {
+    height: 100%;
+    position: absolute;
+}
+
+
+/* 
+1. Tạo ảnh và content bằng 2 thẻ div riêng cùng thuộc box trái
+2. CSS box trái với position: realtive
+3. CSS cơ bản cho ảnh
+4. CSS cho content: 
+    - heigth: 100% --- Đúng bằng chiều cao của box trái
+    - postion: absolute --- Vị trí lúc này được gán với box trái
+
+Cách này không cần dùng z-index và sử dụng trong trường
+hợp chỉ có 2 lớp.
+*/
 
 .quotePage--main__quoteTitle {
     font-size: x-small;
     display: flex;
     margin: 4% 0 0 10%;
-    z-index: 10;
 }
 
 .quotePage--main__quoteTitle .fa {
@@ -57,12 +78,7 @@
 
 .quotePage--main__quoteContent {
     word-break: break-word;
-    width: 80%;
     margin: auto 10%;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 .quotePage--main__quoteContent .fa {
@@ -133,16 +149,19 @@
     font-weight: bold;
     border-radius: 3px;
     border: none;
+    transition: ease 0.1s;
     /* Trường hợp này bến trong chỉ có 1 phần tử nên đặt tên class giống nhau để chỉnh sửa 1 lần */
 }
 
 .quotePage--footer__getButton:hover {
     color: #68466b;
+    font-size: x-small;
+    font-weight: bolder;
+    width: 170px;
 }
 
 .quotePage--footer__shareButton {
     display: flex;
-    margin: auto;
     justify-content: space-around;
 }
 
@@ -169,11 +188,17 @@
      Hiện đang hiểu là set cái hộp 18x18 kia dạng flex,
      sau đó là set cho cái icon nằm giữa chiều ngang
      và chiều dọc. Vẫn đang chưa hiểu hẳn bản chất :v*/
+    transition: ease-out 0.1s;
+}
+
+.quotePage--footer__socialButton:hover {
+    width: 30px;
+    height: 30px;
 }
 
 .quotePage--footer__socialButton.facebook:hover {
     color: blue;
-    border: 1px solid blue
+    border: 1px solid blue;
 }
 
 .quotePage--footer__socialButton.twitter:hover {
